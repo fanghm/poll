@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add a poll</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Add a poll</h1>
+
+    <form action="/add" method="POST">
+	    <p>
+	    	Subject: <input type="text", name="subject" value=""/><br>
+	    	Desc: <input type="area", name="desc" value=""/>
+	    </p>
+	    <input type="submit" value="Submit"/>
+    </form>
+    
+    <p><%= message %></p>
+
+  </body>
+</html>
